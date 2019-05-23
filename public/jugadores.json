@@ -1,0 +1,122 @@
+[
+    {
+        "name": "De Gea",
+        "rol": "Portero",
+        "number": 1
+     },
+     {
+         "name": "Arrizabalaga",
+         "rol": "Portero",
+         "number": 13
+     },
+     {
+         "name": "Pau López",
+         "rol": "Portero",
+         "number": 28
+     },
+     {
+         "name": "Mario Hermoso",
+         "rol": "Defensa",
+         "number": 2
+     },
+     {
+         "name": "Iñigo Martínez",
+         "rol": "Defensa",
+         "number": 6
+     },
+     {
+         "name": "Azpilicueta",
+         "rol": "Defensa",
+         "number": 14
+     },
+     {
+         "name": "Sergio Ramos",
+         "rol": "Defensa",
+         "number": 15
+     },
+     {
+         "name": "Sergi Roberto",
+         "rol": "Defensa",
+         "number": 16
+     },
+     {
+         "name": "Jonny",
+         "rol": "Defensa",
+         "number": 18
+     },
+     {
+         "name": "Alba",
+         "rol": "Defensa",
+         "number": 19
+     },
+     {
+         "name": "Gayá",
+         "rol": "Defensa",
+         "number": 21
+     },
+     {
+         "name": "Llorente",
+         "rol": "Defensa",
+         "number": 34
+     },
+     {
+         "name": "Dani Ceballos",
+         "rol": "Centrocampista",
+         "number": 10
+     },
+     {
+         "name": "Brais",
+         "rol": "Centrocampista",
+         "number": 8
+     },
+     {
+         "name": "Busquets",
+         "rol": "Centrocampista",
+         "number": 5
+     },
+     {
+         "name": "Saúl",
+         "rol": "Centrocampista",
+         "number": 7
+     },
+     {
+         "name": "Marco Asensio",
+         "rol": "Centrocampista",
+         "number": 20
+     },
+     {
+         "name": "Isco",
+         "rol": "Centrocampista",
+         "number": 22
+     },
+     {
+         "name": "Rodrigo",
+         "rol": "Centrocampista",
+         "number": 24
+     },
+     {
+         "name": "Fornals",
+         "rol": "Centrocampista",
+         "number": 27
+     },
+     {
+         "name": "Rodrigo",
+         "rol": "Delantero",
+         "number": 9
+     },
+     {
+         "name": "Aspas",
+         "rol": "Delantero",
+         "number": 17
+     },
+     {
+         "name": "Morata",
+         "rol": "Delantero",
+         "number": 23
+     },
+     {
+         "name": "Suso",
+         "rol": "Delantero",
+         "number": 26
+     }    
+]
