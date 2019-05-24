@@ -1,11 +1,12 @@
 <template>
     <div class="grid">
-        <PruPlayer class="player" v-for="(player, index) in players" v-bind:player="player" v-bind:key="index" />
+        <PruPlayer class="player" v-for="(player, index) in listBookmarks" v-bind:player="player" v-bind:key="index" />
     </div>
 </template>
 
 <script>
 import PruPlayer from './PruPlayer.vue'
+import { mapGetters } from 'vuex'
 
 export default {
     name: 'PruBookmarks',
@@ -20,7 +21,12 @@ export default {
     mounted() {
     },
     methods: {
-    }
+    },
+    computed: {
+     ...mapGetters({
+       listBookmarks: 'bookmarks'
+     })
+   }
 }
 </script>
 

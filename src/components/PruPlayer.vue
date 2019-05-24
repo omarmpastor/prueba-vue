@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-divider">
             {{ player.number }}
-            <PruStar class="pru-star" :isActive="isBookmark" v-on:starIsActive="onBookmark" />
+            <PruStar class="pru-star" :isActive="isSelected(player.number)" v-on:starIsActive="onBookmark" />
         </div>
         <div class="card-section">
             <h4>{{ player.name }}</h4>
@@ -11,25 +11,40 @@
 </template>
 
 <script>
-import PruStar from './PruStar.vue';
+  import PruStar from './PruStar.vue';
+  import { mapGetters, mapActions } from 'vuex'
 
-export default {
+  export default {
     name: 'PruPlayer',
-    data: function() {
-        return {
-            isBookmark: false
-        }
+    data: function () {
+      return {
+        isBookmark: false
+      }
     },
     props: ['player'],
     components: {
-        PruStar
+      PruStar
     },
     methods: {
-        onBookmark(isActive) {
-            this.isBookmark = isActive
-        }
+      onBookmark(isActive) {
+        this.modifyBookmark({
+          number: this.player.number,
+          name: this.player.name
+        })
+      },
+      ...mapActions({
+        modifyBookmark: 'modify'
+      })
+    },
+    computed: {
+      isBookmarked() {
+        return this.isSelected(this.player.number)
+      },
+      ...mapGetters([
+        'isSelected'
+      ])
     }
-}
+  }
 </script>
 
 <style>
